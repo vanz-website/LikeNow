@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 def load_tokens(server_name):
     if server_name == "ID":
-        with open("token_ind.json", "r") as f:
+        with open("token_id.json", "r") as f:
             return json.load(f)
     elif server_name in {"BR", "US", "SAC", "NA"}:
         with open("token_br.json", "r") as f:
